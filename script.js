@@ -197,7 +197,7 @@
             const imageNode = pm.state.schema.nodes.image.create({id: id});
             pm.dispatch(pm.state.tr.replaceSelectionWith(imageNode));
         } else {
-            insertAtCarret('wiki__text', '{{' + id + '}}');
+            insertAtCarret('wiki__text', '{{' + id + '?direct}}');
         }
     }
 
